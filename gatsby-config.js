@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress-experimental`,
       options: {
-        url: `http://www.sellerlift.com/graphql`,
+        url: `https://www.staging1.sellerlift.com/graphql`,
         verbose: true,
         develop: {
           hardCacheMediaFiles: true,
@@ -28,6 +28,8 @@ module.exports = {
         debug: {
           graphql: {
             writeQueriesToDisk: true,
+            showQueryVarsOnError: true,
+            onlyReportCriticalErrors: true,
           },
         },
       },
